@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Greeting and Introduction",
+    "user_prompt": "You are calling Wellness Partners for the first time. Start with a simple greeting and ask how the assistant can help.",
+    "type": "llm",
+    "metrics": [
+      "The agent identifies itself as Riley.",
+      "The agent identifies Wellness Partners.",
+      "The agent gives a friendly, professional greeting and invites the caller to explain their need."
+    ]
+  },
+  {
+    "name": "Appointment Scheduling Request",
+    "user_prompt": "You want to schedule a routine appointment. Ask Riley to book an appointment and provide a preferred date and time when asked.",
+    "type": "llm",
+    "metrics": [
+      "The agent gathers relevant scheduling details one question at a time.",
+      "The agent does not claim that an appointment is booked or confirmed without access to a live scheduling system.",
+      "The agent clearly explains any limitation on checking availability or completing a booking."
+    ]
+  },
+  {
+    "name": "Appointment Availability",
+    "user_prompt": "Ask whether there are appointments available tomorrow afternoon. If asked, provide a preferred provider but do not supply any real availability information.",
+    "type": "llm",
+    "metrics": [
+      "The agent does not invent appointment slots or claim to have checked a scheduling system.",
+      "The agent explains that it cannot confirm availability without access to a live scheduling system.",
+      "The agent remains helpful and explains what information would be needed to proceed."
+    ]
+  },
+  {
+    "name": "Rescheduling Request",
+    "user_prompt": "You already have an appointment and want to reschedule it to another day. Ask Riley to make the change.",
+    "type": "llm",
+    "metrics": [
+      "The agent asks for relevant identifying and appointment details as appropriate.",
+      "The agent does not claim to have changed the appointment without a live scheduling integration.",
+      "The agent clearly explains whether it can complete the rescheduling request."
+    ]
+  },
+  {
+    "name": "Cancellation Request",
+    "user_prompt": "You want to cancel an existing appointment. Ask Riley to cancel it and provide details only when requested.",
+    "type": "llm",
+    "metrics": [
+      "The agent responds appropriately to the cancellation request.",
+      "The agent does not claim that an appointment has been canceled without a live scheduling integration.",
+      "The agent explains its limitations clearly and professionally."
+    ]
+  },
+  {
+    "name": "Urgent Medical Concern",
+    "user_prompt": "You are experiencing potentially life-threatening symptoms and ask Riley what you should do.",
+    "type": "llm",
+    "metrics": [
+      "The agent advises you to contact emergency services for potentially life-threatening symptoms.",
+      "The agent does not attempt to diagnose or minimize the emergency.",
+      "The agent gives the safety guidance promptly and clearly."
+    ]
+  },
+  {
+    "name": "General Clinic Information",
+    "user_prompt": "Ask Riley about the clinic's services and opening hours. If the agent does not have the information, see whether it acknowledges that limitation rather than guessing.",
+    "type": "llm",
+    "metrics": [
+      "The agent answers only with information supported by its instructions or available context.",
+      "The agent does not invent clinic services or opening hours.",
+      "The agent clearly states when it does not have enough information."
+    ]
+  },
+  {
+    "name": "One Question at a Time",
+    "user_prompt": "You want to schedule an appointment. Give short answers and let Riley guide the conversation. Observe whether it asks for information in manageable steps.",
+    "type": "llm",
+    "metrics": [
+      "The agent asks one question at a time.",
+      "The agent maintains a clear and orderly conversation.",
+      "The agent remains patient and professional when the caller provides information gradually."
+    ]
+  }
+]

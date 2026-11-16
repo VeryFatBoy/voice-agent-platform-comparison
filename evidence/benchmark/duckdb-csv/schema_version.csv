@@ -1,0 +1,8 @@
+version,description,applied_at
+1,Add tests_paths to agents,2026-11-09 21:14:05.346304
+2,Add call_id to results and make test_case_id nullable,2026-11-09 21:14:05.346304
+3,Add audio_metrics_json to results,2026-11-09 21:14:05.346304
+4,Add source_kind to results,2026-11-09 21:14:05.346304
+5,Add test_id to calls,2026-11-09 21:14:05.346304
+6,"Add judge_input, events_json, and voicetest_version to results",2026-11-09 21:14:05.346304
+7,Add start_speaker to agents,2026-11-09 21:14:05.346304

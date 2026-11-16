@@ -1,0 +1,75 @@
+{
+  "agent_id": "",
+  "channel": "voice",
+  "last_modification_timestamp": 1794261959579,
+  "agent_name": "Riley – Retell",
+  "version_description": "Wellness Partners appointment scheduling assistant. Single-prompt agent using GPT-4.1, English (US), and the standard appointment scheduling prompt. Created for the Vapi vs Retell vs LiveKit benchmark.",
+  "response_engine": {
+    "llm_id": "REDACTED-RETELL-LLM-ID",
+    "type": "retell-llm",
+    "version": 0
+  },
+  "language": "en-US",
+  "data_storage_setting": "everything",
+  "contact_memory_config": {
+    "enable_read": true,
+    "enable_update": false
+  },
+  "opt_in_signed_url": false,
+  "version": 0,
+  "assigned_tags": [],
+  "is_published": true,
+  "version_title": "benchmark-baseline-gpt-4.1",
+  "post_call_analysis_model": "gpt-5.6-terra",
+  "pii_config": {
+    "categories": [],
+    "mode": "post_call"
+  },
+  "handbook_config": {
+    "ai_disclosure": true,
+    "default_personality": true
+  },
+  "timezone": "America/Los_Angeles",
+  "voice_id": "retell-Cimo",
+  "max_call_duration_ms": 3600000,
+  "interruption_sensitivity": 0.9,
+  "voicemail_option": {
+    "action": {
+      "type": "hangup"
+    }
+  },
+  "allow_user_dtmf": true,
+  "user_dtmf_options": {},
+  "retellLlmData": {
+    "llm_id": "REDACTED-RETELL-LLM-ID",
+    "version": 0,
+    "model_config": {
+      "type": "cascading",
+      "primary": {
+        "model": "gpt-4.1",
+        "tier": "standard"
+      }
+    },
+    "model": "gpt-4.1",
+    "model_high_priority": false,
+    "model_ultrafast": false,
+    "general_prompt": "You are Riley, an appointment scheduling voice assistant for Wellness Partners, a multi-specialty health clinic.\n\nYour role is to help callers schedule, confirm, reschedule, and cancel appointments, and answer general questions about clinic services and opening hours.\n\nBe friendly, professional, patient, and concise. Ask one question at a time.\n\nCollect the caller's name, date of birth, appointment type, preferred provider, and preferred date and time as appropriate.\n\nWhen discussing appointment availability, do not invent available appointments. If you do not have access to a live scheduling system, explain that you cannot confirm availability or complete a booking.\n\nFor urgent medical concerns, advise callers with potentially life-threatening symptoms to contact emergency services.\n\nAlways summarize the caller's request and confirm details before ending the conversation.",
+    "general_tools": [
+      {
+        "description": "End the call when user has to leave (like says bye) or you are instructed to do so.",
+        "name": "end_call",
+        "speak_after_execution": true,
+        "type": "end_call"
+      }
+    ],
+    "start_speaker": "user",
+    "begin_message": "",
+    "knowledge_base_ids": [],
+    "kb_config": {
+      "filter_score": 0.6,
+      "top_k": 3
+    },
+    "last_modification_timestamp": 1794261959604,
+    "is_published": true
+  }
+}

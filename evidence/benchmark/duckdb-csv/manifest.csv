@@ -1,0 +1,7 @@
+schema,table,row_count,filter
+main,agents,3,three final comparison agents
+main,runs,3,runs belonging to the three selected agents
+main,results,24,results belonging to the three selected runs
+main,test_cases,24,test cases referenced by the 24 selected results
+main,schema_version,7,all schema migration records
+main,calls,0,omitted: source table contained no rows
