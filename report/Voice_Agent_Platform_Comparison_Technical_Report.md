@@ -998,14 +998,14 @@ HIPAA applies to covered entities and business associates handling US protected 
 
 | Platform | HIPAA / BAA evidence | Retention / recording controls | Residency considerations |
 | --- | --- | --- | --- |
-| Vapi | HIPAA mode requires a paid compliance add-on and signed BAA; only compatible model, voice and transcription providers may be used. HIPAA mode and ZDR are mutually exclusive. | Current package snapshot lists raw data retention of 14 days (Usage), 30 days (Core), 180 days (Pro); HIPAA mode stores supported call records, transcripts and logs in HIPAA-compliant storage unless configured otherwise. | Vapi documents EU access/data-flow controls, custom storage and provider endpoint choices. Confirm actual region for orchestration, logs, provider inference and recordings; do not assume all artifacts remain in one region. |
-| Retell AI | Trust Center provides a BAA and HIPAA materials; a signed BAA is required before PHI is sent. | Per-agent storage settings and retention controls are described; current Retell material describes retention from 1 to 730 days and default indefinite storage unless configured. Confirm exact current controls in account. | Retell privacy material says personal information is primarily stored/processed in the US. Ask Retell to confirm processing and storage locations for audio, transcripts, logs, subprocessors and backups in writing. |
+| Vapi | HIPAA mode requires a paid compliance add-on and signed BAA; only compatible model, voice and transcription providers may be used. HIPAA mode and ZDR are mutually exclusive. | Current package snapshot lists raw data retention of 14 days (Usage), 30 days (Core), 180 days (Pro); HIPAA mode stores supported call records, transcripts and logs in HIPAA-compliant storage unless configured otherwise. | Vapi's EU region is available only with the Premier Success Package, and each organization belongs to a single region. Vapi also documents data-flow controls, custom storage and provider endpoint choices. Confirm actual region for orchestration, logs, provider inference and recordings; do not assume all artifacts remain in one region. |
+| Retell AI | A signed BAA is required before PHI is sent. Retell's compliance documentation describes the BAA as self-signed online at no additional fee; the Trust Center holds certificates, reports and audit status. | Per-agent storage settings and retention controls are described; current Retell material describes retention from 1 to 730 days and default indefinite storage unless configured. Confirm exact current controls in account. | Retell privacy material says personal information is primarily stored/processed in the US. Ask Retell to confirm processing and storage locations for audio, transcripts, logs, subprocessors and backups in writing. |
 | LiveKit Cloud | BAA is available by request for eligible Scale/Enterprise or qualifying startup projects; BAA scope covers LiveKit Cloud only. Self-hosted LiveKit, third-party model providers and customer storage require separate coverage. | Agent observability can store traces, logs, transcripts and session audio in the project data region; observability can be disabled/reduced. Configure retention and external egress storage deliberately. | Project data region is selected at project creation; EU region, agent deployment, SIP, inference, provider plugins and storage each require separate configuration. Region pinning does not automatically cover every layer. |
 
 Healthcare/security references (accessed November 14, 2026):
 
-- [Vapi HIPAA Compliance](https://docs.vapi.ai/security-and-privacy/hipaa) and [Data Flow](https://docs.vapi.ai/security-and-privacy/data-flow)
-- [Retell Trust Center](https://trust.retellai.com/) and [Privacy Policy](https://www.retellai.com/legal/privacy-policy)
+- [Vapi HIPAA Compliance](https://docs.vapi.ai/security-and-privacy/hipaa), [Data Flow](https://docs.vapi.ai/security-and-privacy/data-flow) and [EU region and data residency](https://docs.vapi.ai/security-and-privacy/eu-region)
+- [Retell Compliance and BAA](https://docs.retellai.com/general/compliance), [Trust Center](https://trust.retellai.com/) and [Privacy Policy](https://www.retellai.com/legal/privacy-policy)
 - [LiveKit HIPAA](https://docs.livekit.io/deploy/admin/hipaa/), [HIPAA Eligible Products and Services](https://livekit.com/legal/hipaa) and [EU data residency](https://docs.livekit.io/deploy/admin/regions/data-residency/)
 
 ### F.5 Source list for platform architecture and operational claims
@@ -1019,6 +1019,10 @@ Healthcare/security references (accessed November 14, 2026):
 - Vapi HIPAA
 
 - Vapi data flow
+
+- Vapi EU region and data residency
+
+- Retell compliance and BAA
 
 - Retell pricing
 
