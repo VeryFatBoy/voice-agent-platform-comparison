@@ -15,6 +15,7 @@ false positives.
 import argparse
 import re
 import sys
+
 from pathlib import Path
 
 try:
@@ -22,7 +23,6 @@ try:
 except ImportError:
     print("Missing dependency. Install it with: python -m pip install -r tools/requirements.txt")
     sys.exit(2)
-
 
 PATTERNS = [
     ("private-key material", re.compile(
@@ -138,7 +138,6 @@ def main():
     print("- This scan does not upload or transmit database contents.")
 
     return 1 if findings else 0
-
 
 if __name__ == "__main__":
     sys.exit(main())
