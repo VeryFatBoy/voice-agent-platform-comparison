@@ -1,6 +1,6 @@
 # Voice Agent Platform Comparison: Vapi, Retell AI and LiveKit
 
-This repository holds the technical report and evidence behind the DZone article [Vapi vs. Retell AI vs. LiveKit: Architecture, Latency, Pricing and Developer Experience](https://dzone.com/articles/vapi-vs-retell-ai-vs-livekit-architecture-latency).
+This repository holds the technical report and evidence behind the DZone article [Vapi vs Retell AI vs LiveKit: Architecture, Latency, Pricing, and Developer Experience](https://dzone.com/articles/voice-ai-platform-comparison).
 
 ## Read this first
 
