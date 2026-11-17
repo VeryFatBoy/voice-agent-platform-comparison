@@ -59,7 +59,6 @@ Be transparent about your capabilities and limitations. Never imply that an acti
             allow_interruptions=True,
         )
 
-
 server = AgentServer()
 
 @server.rtc_session(agent_name="wellness-partners-riley-livekit")
