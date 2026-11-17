@@ -19,7 +19,6 @@ logger = logging.getLogger("agent-wellness-partners-riley-livekit")
 
 load_dotenv(".env.local")
 
-
 class DefaultAgent(Agent):
     def __init__(self) -> None:
         super().__init__(
@@ -94,7 +93,6 @@ async def entrypoint(ctx: JobContext):
             ),
         ),
     )
-
 
 if __name__ == "__main__":
     cli.run_app(server)
