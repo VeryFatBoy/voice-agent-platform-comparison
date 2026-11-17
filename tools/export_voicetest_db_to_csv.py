@@ -21,25 +21,23 @@ Defaults:
 Requires: duckdb Python package.
 """
 
-from pathlib import Path
 import argparse
 import csv
 import duckdb
 
-TARGET_AGENT_NAMES = ("Riley", "Retell - Riley", "LiveKit - Riley")
+from pathlib import Path
 
+TARGET_AGENT_NAMES = ("Riley", "Retell - Riley", "LiveKit - Riley")
 
 def qi(identifier: str) -> str:
     """Quote an SQL identifier discovered from DuckDB metadata."""
     return '"' + identifier.replace('"', '""') + '"'
-
 
 def write_csv(path: Path, columns: list[str], rows: list[tuple]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
         writer.writerow(columns)
         writer.writerows(rows)
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -168,7 +166,6 @@ def main() -> None:
         print("Manifest:", out_dir / "manifest.csv")
     finally:
         con.close()
-
 
 if __name__ == "__main__":
     main()
